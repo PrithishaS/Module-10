@@ -21,8 +21,21 @@ To write a Python program to:
 6. Display the updated list.
 
 ##  Program:
-Add Code Here
+
+# Reg.No: 212222210020
+# Name: Prithisha S
+
+queue = input("Enter elements: ").split()
+
+queue.pop()
+queue.pop()
+
+print("Queue after removal:", queue)
 
 ### Output:
 
+Enter elements: a b c d
+Queue after removal: ['a', 'b']
+
 ## Result:
+The programs were implemented successfully and the outputs were verified.
