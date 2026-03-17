@@ -27,8 +27,36 @@ To develop a Python program that implements a Circular Queue:
 ---
 
 ## 💻 Program:
-Add Code Here
+# Reg.No: 212222210020
+# Name: Prithisha S
+
+class CircularQueue:
+    def __init__(self, size):
+        self.queue = [None]*size
+        self.size = size
+        self.front = self.rear = -1
+    def insert(self, data):
+        if (self.rear + 1) % self.size == self.front:
+            print("Queue is Full")
+        elif self.front == -1:
+            self.front = self.rear = 0
+            self.queue[self.rear] = data
+        else:
+            self.rear = (self.rear + 1) % self.size
+            self.queue[self.rear] = data
+
+   def display(self):
+        print("Queue:", self.queue)
+
+cq = CircularQueue(3)
+cq.insert(1)
+cq.insert(2)
+cq.insert(3)
+cq.display()
 
 ### Output:
 
+Queue: [1, 2, 3]
+
 ## Result:
+The programs were implemented successfully and the outputs were verified.
