@@ -23,6 +23,19 @@ To write a Python program to:
 
 ## 🧪 Program: 
 
+# Reg.No: 212222210020
+# Name: Prithisha S
+
+queue = list(map(int, input("Enter queue elements: ").split()))
+
+queue.sort(reverse=True)
+
+print("Queue in descending order:", queue)
+
 ### Output:
 
+Enter queue elements: 5 2 8 1
+Queue in descending order: [8, 5, 2, 1]
+
 ## Result:
+The programs were implemented successfully and the outputs were verified.
