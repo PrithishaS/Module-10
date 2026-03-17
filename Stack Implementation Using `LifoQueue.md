@@ -22,8 +22,23 @@ To create a Python program that:
 6. Use `get()` repeatedly to pop and print elements in reverse order.
 
 ## Program
-Add Code Here
 
-## 🧪 Sample Input and Output
+# Reg.No: 212222210020
+# Name: Prithisha S
+
+from queue import LifoQueue
+
+stack = LifoQueue(maxsize=7)
+
+stack.put(10)
+stack.put(20)
+stack.put(30)
+
+print("Popped element:", stack.get())
+
+## 🧪Output
+
+Popped element: 30
 
 ## Result:
+The programs were implemented successfully and the outputs were verified.
